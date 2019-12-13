@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css>
+    <link rel="stylesheet" href="static/style.css">
+    <title>Javascript on steriods</title>
+</head>
+<body>
+    <div class="container">
+    <div class="container-1">
+    <h2>challange 1: your age in days </h2>
+    <div class="flex-box-container-1">
+        <div>
+           <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+        </div>
+
+        <div>
+            <button class='btn btn-danger' onclick="reset()">reset </button>
+        </div>
+    </div>
+    <div class="flex-box-container-1">
+        <div id="flex-box-result"></div>
+    </div>
+</div> 
+
+  
+<div class="container-2">
+    <h2>Challange 2: Cat generatoe\r</h2>
+    <button class="btb btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+
+    <div class="flex-box-container-2" id="flex-cat-gen"> 
+    </div>
+</div>
+
+<div class="container-3">
+    <h2>Challange 3: rock paper Scissors</h2>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id='rock' src='rock.jpg' height=150 width=150 alt="" onclick="rpsGame(this)">
+        <img id='paper' src='paper.jpg' height=150 width=150 alt="" onclick="rpsGame(this)">
+        <img id='scissors' src='scissors.jpg' height=150 width=150 alt="" onclick="rpsGame(this)">
+    </div>
+</div>
+
+<div class="container-4">
+    <h2 id="change-my-color">Challange 4: change the colour of All Button</h2>
+    <div class='flex-box-pick-colour'>
+        <form action="">
+            <select name="backdrop" id="backdrop" onchange="buttonColorChange(this)">
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="reset">Reset</option>
+            </select>
+        </form>
+        <button class="btn btn-primary">Wee!</button>
+        <button class="btn btn-danger">Yahoo!</button>
+        <button class="btn btn-warning">Google</button>
+        <button class="btn btn-success">Facebook</button>
+    </div>
+</div>
+
+<div class="container-5">
+    <h2>Challange 5: Black jack</h2>
+    <h3> <span id='blackjack-result'>let's play</span></h3>
+    <div class='flex-blackjack-row-1'>
+        <div id='your-box'>
+            <h2>You: <span id='your-blackjack-result '>0</span></h2>
+        </div>
+
+        <div id='dealer-box'>
+            <h2>Dealer: <span id='dealer-blackjack-result'>0</span></h2>
+        </div>
+    </div>
+    <div class="flex-blackjack-row-2">
+        <div>
+            <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+            <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+            <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+        </div>
+    </div>
+    <div class="flex-blackjack-row-3">
+        <table>
+            <tr>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draw</th>
+            </tr>
+
+            <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+    <script src="static/script.js"></script>
+</body>
+</html>
+
